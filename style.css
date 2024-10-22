@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+@font-face {
+    font-family: sm-font;
+    src: url(Fonts/PlaywriteDEGrund-VariableFont_wght.ttf)
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Envelope Style */
+.envelope {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.envelope p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#open-button {
+    padding: 10px 20px;
+    background-color: #ff2424;
+    font-family: sm-font;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Letter Style */
+.letter {
+    background-color: rgb(54, 54, 54);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+}
+
+.letter p {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    color: White;
+}
+
+.download-button {
+    display: none;
+    font-family: sm-font;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff2424;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .envelope, .letter {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .letter p {
+        font-size: 1rem;
+    }
+
+    #open-button, .download-button {
+        font-size: 0.9rem;
+    }
+}
